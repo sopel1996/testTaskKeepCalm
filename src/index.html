@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/fancybox.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/media.css" />
     <title>Document</title>
   </head>
   <body>
@@ -24,156 +25,172 @@
     </header>
     <section class="sectionTabs">
       <div class="tabs">
-        <input type="radio" name="tab-btn" id="tab-btn-1" value="" />
-        <label class="tabsLabel" for="tab-btn-1">Lorem</label>
-        <input type="radio" name="tab-btn" id="tab-btn-2" value="" checked />
-        <label class="tabsLabel" for="tab-btn-2">ipsum</label>
+        <div class="sectionInner">
+          <input type="radio" name="tab-btn" id="tab-btn-1" value="" />
+          <label class="tabsLabel" for="tab-btn-1">Lorem</label>
+          <input type="radio" name="tab-btn" id="tab-btn-2" value="" checked />
+          <label class="tabsLabel" for="tab-btn-2">ipsum</label>
+          <div class="tabsContent firstTab" id="content-1">
+            <h2 class="tab_title">Lorem ipsum dolor <i> sit</i> amet</h2>
 
-        <div class="tabsContent firstTab" id="content-1">
-          <h2 class="tab_title">Lorem ipsum dolor <i> sit</i> amet</h2>
-
-          <div class="firstTab_cards">
-            <div class="firstTab_cards-item">
-              <div class="firstTab_cards-item-textContent">
-                <h4 class="firstTab_cards-item-title">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit
-                </h4>
-                <p class="firstTab_cards-item-paragraph">
-                  Incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                  veniam, quis nostrud exercitation ullamco laboris nisi ut
-                  aliquip ex ea commodo consequat. Duis aute irure dolor in
-                  reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                  nulla pariatur.
-                </p>
-                <p class="firstTab_cards-item-paragraph">
-                  Excepteur sint occaecat cupidatat non proident, sunt in culpa
-                  qui officia deserunt mollit anim id est laborum/ Incididunt ut
-                  labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-                  nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                  commodo consequat. Duis aute irure dolor in reprehenderit in
-                  voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                  Excepteur sint occaecat cupidatat.
-                </p>
+            <div class="firstTab_cards">
+              <div class="firstTab_cards-item">
+                <div class="firstTab_cards-item-textContent">
+                  <h4 class="firstTab_cards-item-title">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                  </h4>
+                  <p class="firstTab_cards-item-paragraph">
+                    Incididunt ut labore et dolore magna aliqua. Ut enim ad
+                    minim veniam, quis nostrud exercitation ullamco laboris nisi
+                    ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                    reprehenderit in voluptate velit esse cillum dolore eu
+                    fugiat nulla pariatur.
+                  </p>
+                  <p class="firstTab_cards-item-paragraph">
+                    Excepteur sint occaecat cupidatat non proident, sunt in
+                    culpa qui officia deserunt mollit anim id est laborum/
+                    Incididunt ut labore et dolore magna aliqua. Ut enim ad
+                    minim veniam, quis nostrud exercitation ullamco laboris nisi
+                    ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                    reprehenderit in voluptate velit esse cillum dolore eu
+                    fugiat nulla pariatur. Excepteur sint occaecat cupidatat.
+                  </p>
+                </div>
+                <picture class="firstTab_cards-item-img">
+                  <source
+                    srcset="img/avif/firstCardImg.avif"
+                    type="image/avif"
+                  />
+                  <source
+                    srcset="img/webp/firstCardImg.webp"
+                    type="image/webp"
+                  />
+                  <source srcset="img/jpg/firstCardImg.jpg" type="image/jpg" />
+                  <img
+                    src="img/png/firstCardImg.png"
+                    type="image/png"
+                    alt="first card image"
+                  />
+                </picture>
               </div>
-              <picture class="firstTab_cards-item-img">
-                <source srcset="img/avif/firstCardImg.avif" type="image/avif" />
-                <source srcset="img/webp/firstCardImg.webp" type="image/webp" />
-                <source srcset="img/jpg/firstCardImg.jpg" type="image/jpg" />
-                <img
-                  src="img/png/firstCardImg.png"
-                  type="image/png"
-                  alt="first card image"
-                />
-              </picture>
-            </div>
-            <div class="firstTab_cards-item">
-              <div class="firstTab_cards-item-textContent">
-                <h4 class="firstTab_cards-item-title">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit
-                </h4>
-                <p class="firstTab_cards-item-paragraph">
-                  Incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                  veniam, quis nostrud exercitation ullamco laboris nisi ut
-                  aliquip ex ea commodo consequat. Duis aute irure dolor in
-                  reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                  nulla pariatur.
-                </p>
-                <p class="firstTab_cards-item-paragraph">
-                  Excepteur sint occaecat cupidatat non proident, sunt in culpa
-                  qui officia deserunt mollit anim id est laborum
-                </p>
+              <div class="firstTab_cards-item">
+                <div class="firstTab_cards-item-textContent">
+                  <h4 class="firstTab_cards-item-title">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                  </h4>
+                  <p class="firstTab_cards-item-paragraph">
+                    Incididunt ut labore et dolore magna aliqua. Ut enim ad
+                    minim veniam, quis nostrud exercitation ullamco laboris nisi
+                    ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                    reprehenderit in voluptate velit esse cillum dolore eu
+                    fugiat nulla pariatur.
+                  </p>
+                  <p class="firstTab_cards-item-paragraph">
+                    Excepteur sint occaecat cupidatat non proident, sunt in
+                    culpa qui officia deserunt mollit anim id est laborum
+                  </p>
+                </div>
+                <picture class="firstTab_cards-item-img">
+                  <source
+                    srcset="img/avif/secondCardImg.avif"
+                    type="image/avif"
+                  />
+                  <source
+                    srcset="img/webp/secondCardImg.webp"
+                    type="image/webp"
+                  />
+                  <source srcset="img/jpg/secondCardImg.jpg" type="image/jpg" />
+                  <img
+                    src="img/png/secondCardImg.png"
+                    type="image/png"
+                    alt="second card image"
+                  />
+                </picture>
               </div>
-              <picture class="firstTab_cards-item-img">
-                <source
-                  srcset="img/avif/secondCardImg.avif"
-                  type="image/avif"
-                />
-                <source
-                  srcset="img/webp/secondCardImg.webp"
-                  type="image/webp"
-                />
-                <source srcset="img/jpg/secondCardImg.jpg" type="image/jpg" />
-                <img
-                  src="img/png/secondCardImg.png"
-                  type="image/png"
-                  alt="second card image"
-                />
-              </picture>
             </div>
           </div>
-        </div>
-        <div class="tabsContent secondTab" id="content-2">
-          <div class="swiper">
-            <!-- Additional required wrapper -->
-            <div class="swiper-wrapper">
-              <!-- Slides -->
-              <div
-                class="swiper-slide"
-                data-src="img/png/slide1.png"
-                data-fancybox="gallery"
-                data-caption="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum lobortis ultricies ipsum, a maximus ligula dignissim in. Sed consectetur tellus egestas, consequat dolor at, tempus augue. Morbi quis ipsum quis velit.">
-                <picture>
-                  <source srcset="img/avif/slide1.avif" type="image/avif" />
-                  <source srcset="img/webp/slide1.webp" type="image/webp" />
-                  <source srcset="img/jpg/slide1.jpg" type="image/jpg" />
-                  <img src="img/png/slide1.png" type="image/png" alt="" />
-                </picture>
-              </div>
-              <div 
-                class="swiper-slide"
-                data-src="img/png/slide2.png"
-                data-fancybox="gallery"
-                data-caption="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum lobortis ultricies ipsum, a maximus ligula dignissim in. Sed consectetur tellus egestas, consequat dolor at, tempus augue. Morbi quis ipsum quis velit.">
-                <picture>
-                  <source srcset="img/avif/slide2.avif" type="image/avif" />
-                  <source srcset="img/webp/slide2.webp" type="image/webp" />
-                  <source srcset="img/jpg/slide2.jpg" type="image/jpg" />
-                  <img src="img/png/slide2.png" type="image/png" alt="" />
-                </picture>
-                <div class="text bottom">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit
+          <div class="tabsContent secondTab" id="content-2">
+            <h2 class="tab_title">Lorem ipsum dolor <i> sit</i> amet</h2>
+
+            <div class="swiper">
+              <!-- Additional required wrapper -->
+              <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div
+                  class="swiper-slide"
+                  data-src="img/png/slide1.png"
+                  data-fancybox="gallery"
+                  data-caption="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum lobortis ultricies ipsum, a maximus ligula dignissim in. Sed consectetur tellus egestas, consequat dolor at, tempus augue. Morbi quis ipsum quis velit."
+                >
+                  <picture>
+                    <source srcset="img/avif/slide1.avif" type="image/avif" />
+                    <source srcset="img/webp/slide1.webp" type="image/webp" />
+                    <source srcset="img/jpg/slide1.jpg" type="image/jpg" />
+                    <img src="img/png/slide1.png" type="image/png" alt="" />
+                  </picture>
                 </div>
-              </div>
-              <div 
-                class="swiper-slide"
-                data-src="img/png/slide4.png"
-                data-fancybox="gallery"
-                data-caption="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum lobortis ultricies ipsum, a maximus ligula dignissim in. Sed consectetur tellus egestas, consequat dolor at, tempus augue. Morbi quis ipsum quis velit.">
-                <picture>
-                  <source srcset="img/avif/slide4.avif" type="image/avif" />
-                  <source srcset="img/webp/slide4.webp" type="image/webp" />
-                  <source srcset="img/jpg/slide4.jpg" type="image/jpg" />
-                  <img src="img/png/slide4.png" type="image/png" alt="" />
-                </picture>
-              </div>
-              <div 
-                class="swiper-slide"
-                data-src="img/png/slide3.png"
-                data-fancybox="gallery"
-                data-caption="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum lobortis ultricies ipsum, a maximus ligula dignissim in. Sed consectetur tellus egestas, consequat dolor at, tempus augue. Morbi quis ipsum quis velit.">
-                <picture>
-                  <source srcset="img/avif/slide3.avif" type="image/avif" />
-                  <source srcset="img/webp/slide3.webp" type="image/webp" />
-                  <source srcset="img/jpg/slide3.jpg" type="image/jpg" />
-                  <img src="img/png/slide3.png" type="image/png" alt="" />
-                </picture>
-              </div>
-              <div 
-                class="swiper-slide"
-                data-src="img/png/slide5.png"
-                data-fancybox="gallery"
-                data-caption="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum lobortis ultricies ipsum, a maximus ligula dignissim in. Sed consectetur tellus egestas, consequat dolor at, tempus augue. Morbi quis ipsum quis velit.">
-                <picture>
-                  <source srcset="img/avif/slide5.avif" type="image/avif" />
-                  <source srcset="img/webp/slide5.webp" type="image/webp" />
-                  <source srcset="img/jpg/slide5.jpg" type="image/jpg" />
-                  <img src="img/png/slide5.png" type="image/png" alt="" />
-                </picture>
-                <div class="text top">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                <div
+                  class="swiper-slide"
+                  data-src="img/png/slide2.png"
+                  data-fancybox="gallery"
+                  data-caption="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum lobortis ultricies ipsum, a maximus ligula dignissim in. Sed consectetur tellus egestas, consequat dolor at, tempus augue. Morbi quis ipsum quis velit."
+                >
+                  <picture>
+                    <source srcset="img/avif/slide2.avif" type="image/avif" />
+                    <source srcset="img/webp/slide2.webp" type="image/webp" />
+                    <source srcset="img/jpg/slide2.jpg" type="image/jpg" />
+                    <img src="img/png/slide2.png" type="image/png" alt="" />
+                  </picture>
+                  <div class="text bottom">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                  </div>
+                </div>
+                <div
+                  class="swiper-slide"
+                  data-src="img/png/slide4.png"
+                  data-fancybox="gallery"
+                  data-caption="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum lobortis ultricies ipsum, a maximus ligula dignissim in. Sed consectetur tellus egestas, consequat dolor at, tempus augue. Morbi quis ipsum quis velit."
+                >
+                  <picture>
+                    <source srcset="img/avif/slide4.avif" type="image/avif" />
+                    <source srcset="img/webp/slide4.webp" type="image/webp" />
+                    <source srcset="img/jpg/slide4.jpg" type="image/jpg" />
+                    <img src="img/png/slide4.png" type="image/png" alt="" />
+                  </picture>
+                </div>
+                <div
+                  class="swiper-slide"
+                  data-src="img/png/slide3.png"
+                  data-fancybox="gallery"
+                  data-caption="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum lobortis ultricies ipsum, a maximus ligula dignissim in. Sed consectetur tellus egestas, consequat dolor at, tempus augue. Morbi quis ipsum quis velit."
+                >
+                  <picture>
+                    <source srcset="img/avif/slide3.avif" type="image/avif" />
+                    <source srcset="img/webp/slide3.webp" type="image/webp" />
+                    <source srcset="img/jpg/slide3.jpg" type="image/jpg" />
+                    <img src="img/png/slide3.png" type="image/png" alt="" />
+                  </picture>
+                </div>
+                <div
+                  class="swiper-slide"
+                  data-src="img/png/slide5.png"
+                  data-fancybox="gallery"
+                  data-caption="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum lobortis ultricies ipsum, a maximus ligula dignissim in. Sed consectetur tellus egestas, consequat dolor at, tempus augue. Morbi quis ipsum quis velit."
+                >
+                  <picture>
+                    <source srcset="img/avif/slide5.avif" type="image/avif" />
+                    <source srcset="img/webp/slide5.webp" type="image/webp" />
+                    <source srcset="img/jpg/slide5.jpg" type="image/jpg" />
+                    <img src="img/png/slide5.png" type="image/png" alt="" />
+                  </picture>
+                  <div class="text right">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                  </div>
                 </div>
               </div>
             </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
           </div>
         </div>
       </div>

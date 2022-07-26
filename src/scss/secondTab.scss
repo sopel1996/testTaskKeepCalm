@@ -2,27 +2,28 @@
 
 .secondTab{
     position: relative;
-    &::after,
-    &::before{
-        z-index: 999;
-        content:'';
-        display: block;
-        position: absolute;
-        right: 0;
-        top: 0;
-        width: 54px;
-        height: 100%;
-        background: linear-gradient(270deg, #FFFFFF 0%, rgba(255, 255, 255, 0.05) 100%);
-    }
-    &::before{
-        right: auto;
-        left: 0;
-        background: linear-gradient(90deg, #FFFFFF 0%, rgba(255, 255, 255, 0.05) 100%);
-    }
+    margin: 0 0 80px 0;
+    
     .swiper {
         width : 100%;
         height: 100%;
-        margin: 0 0 80px 0;
+        &::after,
+        &::before{
+            z-index: 999;
+            content:'';
+            display: block;
+            position: absolute;
+            right: -3px;
+            top: 0;
+            width: 54px;
+            height: 100%;
+            background: linear-gradient(270deg, #FFFFFF 0%, rgba(255, 255, 255, 0.05) 100%);
+        }
+        &::before{
+            right: auto;
+            left: -3px;
+            background: linear-gradient(90deg, #FFFFFF 0%, rgba(255, 255, 255, 0.05) 100%);
+        }
         &-slide {
             text-align: center;
             font-size : 18px;
@@ -38,27 +39,53 @@
                 width: 100%;
                 height: 400px;
                 object-fit: none;
-                max-width: 260px;
+                max-width: 230px;
             }
             .text{
-                background: rgba(20, 20, 20, 0.5);
+                background: rgba(20, 20, 20, 0.8);
                 padding: 35px 30px;
                 width: 100%;
                 text-align: left;
                 color: $secondaryColor_text;
                 @include OrchideaProMedium(24);
                 line-height: 1.1;
-                max-width: 260px;
+                max-width: 230px;
             }
-            .top{
+            .right{
                 position: absolute;
-                top: 0;
+                right: 0;
+                width: 50% !important;
+                height: 100%;
             }
             .bottom{
                 position: absolute;
                 bottom: 0;
             }
         }
+
+    }
+    .swiper-button-next, .swiper-button-prev{
+        display: none;
+        bottom: -50px;
+        top: auto;
+        right: 40%;
+        transform: translate(50%, 0);
+    }
+    .swiper-button-prev{
+        right: auto;
+        left: 40%;
+        transform: translate(-50%, 0);
+
+        
+    }
+    .swiper-button-next:after, .swiper-button-prev:after{
+        content: url(../img/svg/next.svg);
+        display: block;
+        width: 48px;
+        height: 48px;
+    }
+    .swiper-button-prev:after{
+        content: url(../img/svg/prev.svg);
     }
 }
 .fancybox__slide::before, .fancybox__slide::after{

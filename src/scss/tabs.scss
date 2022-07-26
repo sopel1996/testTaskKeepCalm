@@ -4,11 +4,11 @@
 .tabs {
     font-size: 0;
 
-    &>input[type='radio'] {
+    input[type='radio'] {
         display: none;
     }
 
-    &>&Content {
+    &Content {
         /* скрыть контент по умолчанию */
         display  : none;
         font-size: 16px;
@@ -44,7 +44,7 @@
         }
     }
 
-    &>input[type='radio']:checked+label {
+    & input[type='radio']:checked+label {
         border-bottom: 3px solid $primaryColor_text;
     }
 }

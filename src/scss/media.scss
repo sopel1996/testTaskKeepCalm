@@ -6,3 +6,68 @@ $xl: 1200px;
 $xxl: 1400px;
 @import 'color.scss';
 @import 'mixins.scss';
+
+@media screen and (min-width: $sm) {
+    .secondTab .swiper-slide picture,
+    .secondTab .swiper-slide img,
+    .secondTab .swiper-slide .text{
+        max-width: none;
+        width: 100%;
+    }
+    .secondTab .swiper-slide{
+        max-width: 400px;
+        width: 400px;
+    }
+}
+@media screen and (min-width: $md) {
+    .secondTab .swiper-button-next, .secondTab .swiper-button-prev{
+        display: flex;
+    }
+    .sectionHeader_phone{
+        display: block;
+    }
+    .sectionHeader_phone-mobView{
+        display: none;
+    }
+    .tab_title{
+        font-size: toRem(64);
+        text-align: center;
+    }
+    .tabsLabel{
+        font-size: toRem(36);
+    }
+    .sectionInner{
+        width: 100%;
+        max-width: 1397px;
+        margin: 0 auto;
+    }
+    .firstTab_cards-item-title{
+        font-size: toRem(48);
+    }
+    .firstTab_cards-item-paragraph{
+        font-size: toRem(18);
+
+    }
+    .firstTab_cards-item{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: flex-start;
+        &:nth-child(2n){
+            flex-direction: row-reverse;
+            .firstTab_cards-item-textContent{
+                margin: 0  0 0 200px;
+            }
+        }
+    }
+    .firstTab_cards-item-textContent{
+        margin: 0 200px 0 0;
+    }
+    .firstTab_cards-item-img{
+        flex-shrink: 0;
+    }
+}
+@media (min-width: 1024px){}
+    .fancybox__nav .carousel__button.is-prev {
+    right: 88px;
+}
