@@ -48,3 +48,14 @@
         border-bottom: 3px solid $primaryColor_text;
     }
 }
+.tab_title {
+    @include OrchideaProMedium(36);
+    line-height: 1.2;
+    color:  $primaryColor_text;
+    text-transform: uppercase;
+    margin: 0 0 30px 0;
+    padding: 0 20px;
+    i{
+        text-transform: none;
+    }
+}
