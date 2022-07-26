@@ -1,60 +1,121 @@
 <!DOCTYPE html>
-<html lang="ru" class="no-webplossy no-avif">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/media.css" />
-    <title>Test Task KeepCalm</title>
-
-    <script>
-      var imageData = {
-        avif: 'data:image/avif;base64,AAAAIGZ0eXBhdmlmAAAAAGF2aWZtaWYxbWlhZk1BMUIAAADybWV0YQAAAAAAAAAoaGRscgAAAAAAAAAAcGljdAAAAAAAAAAAAAAAAGxpYmF2aWYAAAAADnBpdG0AAAAAAAEAAAAeaWxvYwAAAABEAAABAAEAAAABAAABGgAAAB0AAAAoaWluZgAAAAAAAQAAABppbmZlAgAAAAABAABhdjAxQ29sb3IAAAAAamlwcnAAAABLaXBjbwAAABRpc3BlAAAAAAAAAAIAAAACAAAAEHBpeGkAAAAAAwgICAAAAAxhdjFDgQ0MAAAAABNjb2xybmNseAACAAIAAYAAAAAXaXBtYQAAAAAAAAABAAEEAQKDBAAAACVtZGF0EgAKCBgANogQEAwgMg8f8D///8WfhwB8+ErK42A=',
-        webp: 'data:image/webp;base64,UklGRiIAAABXRUJQVlA4IBYAAAAwAQCdASoBAAEADsD+JaQAA3AAAAAA',
-      };
-  
-      // Функция проверки написана на основе документации Google:
-      // https://developers.google.com/speed/webp/faq#in_your_own_javascript
-  
-      function checkImageFormatSupport(imageFormat, callback) {
-        var img = new Image();
-        
-        img.src = imageData[imageFormat];
-        
-        img.onload = function () { var result = (img.width > 0) && (img.height > 0); callback(result); };
-        img.onerror = function () { callback(false); };
-      }
-  
-      // Проверяем поддержку WebP Lossy (сжатие с потерями)
-      
-      checkImageFormatSupport('webp', function (isWebpLossySupported) {
-        if (isWebpLossySupported) {
-          document.documentElement.className = document.documentElement.className.replace('no-webplossy', 'webplossy');
-        }
-      });
-  
-      // Проверяем поддержку AVIF
-    
-      checkImageFormatSupport('avif', function (isAvifSupported) {
-        if (isAvifSupported) {
-          document.documentElement.className = document.documentElement.className.replace('no-avif', 'avif');
-        }
-      });
-  </script>
-
+    <title>Document</title>
   </head>
   <body>
+    <header class="sectionHeader">
+      <div class="sectionInner">
+        <img src="img/svg/logo.svg" alt="logo" class="sectionHeader_logo" />
+        <a href="tel:+4954954954" class="sectionHeader_phone"
+          >+7 (495) 495-49-54</a
+        >
+        <a href="tel:+4954954954" class="sectionHeader_phone-mobView"
+          ><img src="img/svg/phone.svg" alt="phone icon"></a
+        >
+      </div>
+    </header>
+    <section class="sectionTabs">
+        <div class="tabs">
+          <input type="radio" name="tab-btn" id="tab-btn-1" value="" checked />
+          <label class="tabsLabel" for="tab-btn-1">Lorem</label>
+          <input type="radio" name="tab-btn" id="tab-btn-2" value="" />
+          <label class="tabsLabel" for="tab-btn-2">ipsum</label>
 
-   <picture>
-      <source srcset="img/avif/quadBike.avif" type="image/avif" />
-      <source srcset="img/webp/quadBike.webp" type="image/webp" />
-      <source srcset="img/png/quadBike.png" />
-      <img src="img/png/quadBike.png" alt="" />
-    </picture>
+          <div class="tabsContent firstTab" id="content-1">
+            <h2 class="firstTab_title">Lorem ipsum dolor <i> sit</i> amet</h2>
 
+            <div class="firstTab_cards">
+              <div class="firstTab_cards-item">
+                <div class="firstTab_cards-item-textContent">
+                  <h4 class="firstTab_cards-item-title">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                  </h4>
+                  <p class="firstTab_cards-item-paragraph">
+                    Incididunt ut labore et dolore magna aliqua. Ut enim ad
+                    minim veniam, quis nostrud exercitation ullamco laboris nisi
+                    ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                    reprehenderit in voluptate velit esse cillum dolore eu
+                    fugiat nulla pariatur.
+                  </p>
+                  <p class="firstTab_cards-item-paragraph">
+                    Excepteur sint occaecat cupidatat non proident, sunt in
+                    culpa qui officia deserunt mollit anim id est laborum/
+                    Incididunt ut labore et dolore magna aliqua. Ut enim ad
+                    minim veniam, quis nostrud exercitation ullamco laboris nisi
+                    ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                    reprehenderit in voluptate velit esse cillum dolore eu
+                    fugiat nulla pariatur. Excepteur sint occaecat cupidatat.
+                  </p>
+                </div>
+                <picture class="firstTab_cards-item-img">
+                  <source
+                    srcset="img/avif/firstCardImg.avif"
+                    type="image/avif"
+                  />
+                  <source
+                    srcset="img/webp/firstCardImg.webp"
+                    type="image/webp"
+                  />
+                  <source srcset="img/jpg/firstCardImg.jpg" type="image/jpg" />
+                  <img
+                    src="img/png/firstCardImg.png"
+                    type="image/png"
+                    alt="first card image"
+                  />
+                </picture>
+              </div>
+              <div class="firstTab_cards-item">
+                <div class="firstTab_cards-item-textContent">
+                  <h4 class="firstTab_cards-item-title">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                  </h4>
+                  <p class="firstTab_cards-item-paragraph">
+                    Incididunt ut labore et dolore magna aliqua. Ut enim ad
+                    minim veniam, quis nostrud exercitation ullamco laboris nisi
+                    ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                    reprehenderit in voluptate velit esse cillum dolore eu
+                    fugiat nulla pariatur.
+                  </p>
+                  <p class="firstTab_cards-item-paragraph">
+                    Excepteur sint occaecat cupidatat non proident, sunt in
+                    culpa qui officia deserunt mollit anim id est laborum
+                  </p>
+                </div>
+                <picture class="firstTab_cards-item-img">
+                  <source
+                    srcset="img/avif/secondCardImg.avif"
+                    type="image/avif"
+                  />
+                  <source
+                    srcset="img/webp/secondCardImg.webp"
+                    type="image/webp"
+                  />
+                  <source srcset="img/jpg/secondCardImg.jpg" type="image/jpg" />
+                  <img
+                    src="img/png/secondCardImg.png"
+                    type="image/png"
+                    alt="second card image"
+                  />
+                </picture>
+              </div>
+            </div>
+          </div>
+          <div class="tabsContent" id="content-2">Содержимое 2...</div>
+        </div>
+    </section>
 
-   <script src="js/index.js"></script>
+    <footer class="sectionFooter">
+      <div class="sectionInner">
+        <span class="sectionFooter_coopyright"> © TEST, 1022–2022 </span>
+      </div>
+    </footer>
+    <script src="js/lib.js"></script>
+    <script src="js/index.js"></script>
   </body>
 </html>

@@ -133,6 +133,8 @@ gulp.task('watch', () => {
          baseDir: "./build/"
       }
    });
+   gulp.watch('./src/img/**', gulp.series('png2webp'))
+   gulp.watch('./src/img/**', gulp.series('png2avif'))
    gulp.watch('./src/img/**', gulp.series('image_min'))
    //Следить за файлами со стилями с нужным расширением
    gulp.watch('./src/scss/**/*.scss', gulp.series('styles'))

@@ -4,33 +4,33 @@
     @return $remValue;
 }
 
-// @mixin RubikRegular($size_px) {
-//     font-family: 'Rubik', sans-serif;
-//     font-weight: 400;
-//     font-size  : toRem($size_px);
-//     font-style : normal;
-// }
-// @mixin RubikMedium($size_px) {
-//     font-family: 'Rubik', sans-serif;
-//     font-weight: 500;
-//     font-size  : toRem($size_px);
-//     font-style : normal;
-// }
-// @mixin RubikSemiBold($size_px) {
-//     font-family: 'Rubik', sans-serif;
-//     font-weight: 600;
-//     font-size  : toRem($size_px);
-//     font-style : normal;
-// }
-// @mixin RubikBold($size_px) {
-//     font-family: 'Rubik', sans-serif;
-//     font-weight: 700;
-//     font-size  : toRem($size_px);
-//     font-style : normal;
-// }
-// @mixin RubikBlackItalic($size_px) {
-//     font-family: 'Rubik', sans-serif;
-//     font-weight: 900;
-//     font-size  : toRem($size_px);
-//     font-style : italic;
-// }
+@mixin RobotoRegular($size_px) {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size  : toRem($size_px);
+    font-style : normal;
+}
+@mixin ManropeMedium($size_px) {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 500;
+    font-size  : toRem($size_px);
+    font-style : normal;
+}
+@mixin OrchideaProMedium($size_px) {
+    font-family: 'OrchideaPro', sans-serif;
+    font-weight: 500;
+    font-size  : toRem($size_px);
+    font-style : normal;
+}
+@mixin ManropeBold($size_px) {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 700;
+    font-size  : toRem($size_px);
+    font-style : normal;
+}
+@mixin OrchideaProMediumItalic($size_px) {
+    font-family: 'OrchideaPro', sans-serif;
+    font-weight: 500;
+    font-size  : toRem($size_px);
+    font-style : italic;
+}

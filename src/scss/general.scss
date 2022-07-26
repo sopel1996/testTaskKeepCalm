@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.sectionInner{
+    padding: 20px;
+    height: 100%;
+    width: 100%;
+}
+// img{
+//     width: 100%;
+// }
+a,
+a:active,
+a:visited{
+    color: $secondaryColor_text;
+    text-decoration: none;
+}

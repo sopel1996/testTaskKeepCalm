@@ -1,0 +1,12 @@
+.sectionFooter {
+    height:200px;
+    background-color: $primaryColor_text;
+    .sectionInner {
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+    }
+    .sectionFooter_coopyright {
+        color: $secondaryColor_text;
+    }
+}

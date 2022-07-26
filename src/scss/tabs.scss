@@ -1,0 +1,50 @@
+@import "color.scss";
+@import "mixins.scss";
+
+.tabs {
+    font-size: 0;
+
+    &>input[type='radio'] {
+        display: none;
+    }
+
+    &>&Content {
+        /* скрыть контент по умолчанию */
+        display  : none;
+        font-size: 16px;
+    }
+
+    /* отобразить контент, связанный с вабранной радиокнопкой (input type='radio') */
+    #tab-btn-1:checked~#content-1,
+    #tab-btn-2:checked~#content-2 {
+        display: block;
+    }
+
+    &Label {
+        display       : inline-block;
+        text-align    : center;
+        vertical-align: middle;
+        user-select   : none;
+        color         : $primaryColor_text;
+        border        : none;
+        transition    : color 0.15s ease-in-out, background-color 0.15s ease-in-out;
+        cursor        : pointer;
+        position      : relative;
+        top           : 1px;
+        margin        : 0 20px 60px 0;
+        text-transform: uppercase;
+        @include ManropeBold(18);
+        line-height: 1.2;
+
+        &:first-of-type {
+            margin-left: 20px;
+        }
+        &:last-of-type {
+            margin-right: 20px;
+        }
+    }
+
+    &>input[type='radio']:checked+label {
+        border-bottom: 3px solid $primaryColor_text;
+    }
+}

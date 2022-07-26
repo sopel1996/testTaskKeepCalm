@@ -32,23 +32,50 @@ Fonts
 //     font-display: swap;
 // }
 
-// @font-face {
-//     font-family: "Rubik";
-//     src        : url('../fonts/Rubik-Regular.ttf') format('truetype'),
-//         url('../fonts/Rubik-Regular.woff') format('woff'),
-//         url('../fonts/Rubik-Regular.woff2') format('woff2');
-//     font-weight : 400;
-//     font-display: swap;
-// }
+@font-face {
+    font-family: "Manrope";
+    src        : url('../fonts/Manrope-Medium.ttf') format('truetype'),
+        url('../fonts/Manrope-Medium.woff') format('woff'),
+        url('../fonts/Manrope-Medium.woff2') format('woff2');
+    font-weight : 500;
+    font-display: swap;
+}
 
-// @font-face {
-//     font-family: "Rubik";
-//     src        : url('../fonts/Rubik-Medium.ttf') format('truetype'),
-//         url('../fonts/Rubik-Medium.woff') format('woff'),
-//         url('../fonts/Rubik-Medium.woff2') format('woff2');
-//     font-weight : 500;
-//     font-display: swap;
-// }
+@font-face {
+    font-family: "Manrope";
+    src        : url('../fonts/Manrope-Bold.ttf') format('truetype'),
+        url('../fonts/Manrope-Bold.woff') format('woff'),
+        url('../fonts/Manrope-Bold.woff2') format('woff2');
+    font-weight : 700;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src        : url('../fonts/Roboto-Regular.ttf') format('truetype'),
+        url('../fonts/Roboto-Regular.woff') format('woff'),
+        url('../fonts/Roboto-Regular.woff2') format('woff2');
+    font-weight : 400;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "OrchideaPro";
+    src        : url('../fonts/OrchideaPro-Medium.ttf') format('truetype'),
+        url('../fonts/OrchideaPro-Medium.woff') format('woff'),
+        url('../fonts/OrchideaPro-Medium.woff2') format('woff2');
+    font-weight : 500;
+    font-display: swap;
+}
+@font-face {
+    font-family: "OrchideaPro";
+    src        : url('../fonts/OrchideaPro-MediumItalic.ttf') format('truetype'),
+        url('../fonts/OrchideaPro-Mediumtalic.woff') format('woff'),
+        url('../fonts/OrchideaPro-MediumItalic.woff2') format('woff2');
+    font-weight : 500;
+    font-display: swap;
+    font-style: italic;
+}
 
 // @font-face {
 //     font-family: "Rubik";
