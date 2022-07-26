@@ -1,7 +1,7 @@
 {
-  "name": "initial_build",
+  "name": "test_task_KeepCalm",
   "version": "1.0.0",
-  "description": "initial build for new projects",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
